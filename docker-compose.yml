@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  rebate-bot:
+    build: .
+    container_name: moltbot-rebate-manager
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+    healthcheck:
+      test: ["CMD", "node", "-e", "console.log('healthy')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
