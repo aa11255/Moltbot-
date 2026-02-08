@@ -88,7 +88,7 @@ async function handleUidBinding(
         customerRepo.bindExchangeUid(telegramId, exchange, uid);
 
         const exchangeName = exchange === 'okx' ? 'OKX' : 'Gate.io';
-        const rebateRate = exchange === 'okx' ? '45%' : '85%';
+        const rebateRate = exchange === 'okx' ? '45%' : '80%';
 
         await ctx.reply(`
 ✅ *${exchangeName} 账户绑定成功！*

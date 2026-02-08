@@ -11,8 +11,8 @@ export function getWelcomeMessage(name?: string): string {
 
 我是您的专属交易成本优化助手。通过我的渠道注册，您可享受：
 
-🔶 *OKX*：高达 *50%* 手续费返还
-🔷 *Gate.io*：高达 *85%* 手续费返还
+🔶 *OKX*：高达 *45%* 手续费返还
+🔷 *Gate.io*：高达 *80%* 手续费返还
 
 ✨ *核心优势*：
 • 24小时自动统计交易额
@@ -34,11 +34,11 @@ export function getRegisterMessage(ctx: MessageContext): string {
 请选择您想注册的交易所：
 
 🔶 *OKX 交易所*
-• 返佣比例：*50%*
+• 返佣比例：*45%*
 • 注册链接：${ctx.referralLink || '暂未配置'}
 
 🔷 *Gate.io 芝麻开门*
-• 返佣比例：*85%*
+• 返佣比例：*80%*
 • 注册链接：${ctx.referralLink || '暂未配置'}
 
 💡 *注册后请将您的 UID 发送给我*
